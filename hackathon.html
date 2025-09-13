@@ -1,0 +1,76 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume & Portfolio Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Resume & Portfolio Builder</h1>
+  </header>
+  
+  <main>
+    <section id="resume-builder">
+      <h2>Create Your Resume</h2>
+      <form id="resume-form" aria-label="Resume Creation Form">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="education">Education</label>
+        <textarea id="education" name="education"></textarea>
+
+        <label for="experience">Experience</label>
+        <textarea id="experience" name="experience"></textarea>
+
+        <!-- Add more fields as needed -->
+
+        <button type="submit">Preview Resume</button>
+      </form>
+
+      <section id="resume-preview" aria-live="polite" aria-label="Resume Preview">
+        <!-- Resume preview will update here dynamically -->
+      </section>
+    </section>
+
+    <section id="portfolio-builder">
+      <h2>Build Your Portfolio</h2>
+      <form id="project-form" aria-label="Add Portfolio Project">
+        <label for="project-title">Project Title</label>
+        <input type="text" id="project-title" name="project-title" required />
+
+        <label for="project-description">Description</label>
+        <textarea id="project-description" name="project-description"></textarea>
+
+        <label for="project-link">Project Link</label>
+        <input type="url" id="project-link" name="project-link" />
+
+        <button type="submit">Add Project</button>
+      </form>
+
+      <section id="portfolio-preview" aria-live="polite" aria-label="Portfolio Preview">
+        <!-- Portfolio projects will display here -->
+      </section>
+    </section>
+
+    <section id="interactive-feedback">
+      <h2>Rate Resumes</h2>
+      <p>Rate clarity and industry adaptation of sample resumes</p>
+      <!-- Example interactive rating (could be star rating or sliders) -->
+      <label for="clarity-rating">Clarity:</label>
+      <input type="range" id="clarity-rating" name="clarity-rating" min="1" max="5" />
+      
+      <label for="industry-adaptation">Industry Adaptation:</label>
+      <input type="range" id="industry-adaptation" name="industry-adaptation" min="1" max="5" />
+    </section>
+  </main>
+  
+  <footer>
+    <p>© 2025 Resume & Portfolio Builder</p>
+  </footer>
+</body>
+</html>
